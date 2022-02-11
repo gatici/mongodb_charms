@@ -1,0 +1,21 @@
+"name": "layer-caas-base"
+"maintainer": "Juju Core <juju@lists.ubuntu.com>"
+"description": "Base layer for CAAS charms."
+"includes":
+- "layer:options"
+- "layer:caas-base"
+- "layer:status"
+- "layer:leadership"
+- "layer:osm-common"
+- "interface:mongodb"
+"tactics":
+- "tactics.wheelhouse.CAASWheelhouseTactic"
+"options":
+  "layer-caas-base": {}
+  "status":
+    "patch-hookenv": !!bool "true"
+  "leadership": {}
+  "osm-common": {}
+  "mongodb-k8s": {}
+"repo": "https://code.launchpad.net/osm-k8s-bundle"
+"is": "mongodb-k8s"

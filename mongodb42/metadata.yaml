@@ -1,0 +1,20 @@
+"name": "mongodb-k8s"
+"summary": "MongoDB charm for Kubernetes."
+"maintainers":
+- "SolutionsQA <solutionsqa@lists.canonical.com>"
+"description": |
+  A CAAS charm to deploy MongoDB.
+"tags":
+- "application"
+"series":
+- "kubernetes"
+"provides":
+  "mongo":
+    "interface": "mongodb"
+"deployment":
+  "type": "stateful"
+  "service": "cluster"
+"storage":
+  "database":
+    "type": "filesystem"
+    "location": "/data/db"

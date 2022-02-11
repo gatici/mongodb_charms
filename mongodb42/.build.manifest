@@ -1,0 +1,2365 @@
+{
+  "layers": [
+    {
+      "branch": "refs/heads/master",
+      "fetched_url": "https://github.com/juju-solutions/layer-options.git",
+      "rev": "fcdcea4e5de3e1556c24e6704607862d0ba00a56",
+      "url": "layer:options"
+    },
+    {
+      "branch": "refs/heads/master",
+      "fetched_url": "https://github.com/juju-solutions/layer-caas-base.git",
+      "rev": "54623d05c1182166658279901f7cf3ee821311a0",
+      "url": "layer:caas-base"
+    },
+    {
+      "branch": "refs/heads/master",
+      "fetched_url": "https://github.com/juju-solutions/layer-status",
+      "rev": "a7d7b6423db37a47611310039e6ed1929c0a2eab",
+      "url": "layer:status"
+    },
+    {
+      "branch": "refs/heads/master",
+      "fetched_url": "https://git.launchpad.net/layer-leadership",
+      "rev": "cc5bd3f49b2fa5e6c3ab2336763c313ec8bf083f",
+      "url": "layer:leadership"
+    },
+    {
+      "branch": "refs/heads/master",
+      "rev": "d655aba316d923621e9ee6c524f14e184ed0f761",
+      "url": "layer:osm-common"
+    },
+    {
+      "branch": "refs/heads/v10.0",
+      "rev": "b31d236e360c9b646178c9f3f533bf6b8c61bcbe",
+      "url": "mongodb-k8s"
+    },
+    {
+      "branch": "refs/heads/master",
+      "rev": "b11a792d23eb584e3d2a9cf064e1cb43df7bff12",
+      "url": "interface:mongodb"
+    }
+  ],
+  "signatures": {
+    ".build.manifest": [
+      "build",
+      "dynamic",
+      "unchecked"
+    ],
+    ".gitignore": [
+      "mongodb-k8s",
+      "static",
+      "15cacd5a5eabfa62504e986274a743aee476d536bf233e488a1b8621e19ee7d2"
+    ],
+    ".yamllint.yaml": [
+      "mongodb-k8s",
+      "static",
+      "532ec742e952c7496abd3f71ccbd64a045abf0c49499a4ab5c1c64ed4a4b3647"
+    ],
+    "LICENSE": [
+      "layer:status",
+      "static",
+      "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    ],
+    "README.md": [
+      "mongodb-k8s",
+      "static",
+      "47b4c8684db5f26bac26d485da9933fde96eaa400ebf12fe9f4688d5d6e2a248"
+    ],
+    "actions.yaml": [
+      "mongodb-k8s",
+      "dynamic",
+      "66892b51466fd15c9c213e0bdd6a28dddbf702cace9bfe980f526792da011935"
+    ],
+    "actions/backup": [
+      "mongodb-k8s",
+      "static",
+      "5fbcf5b963871a65ed0c5d7fa8f815d88af3c523050c0872bda76e31d3264a21"
+    ],
+    "actions/is-primary": [
+      "mongodb-k8s",
+      "static",
+      "df8a467e6b347481f775247f4e85180eb767adb3282e8a00f4403ee1ed6061ff"
+    ],
+    "actions/remove-backup": [
+      "mongodb-k8s",
+      "static",
+      "c447bc9b54f53abc0e0cc18fd067c309af6ee3f025b0bb6a289205d97990eeaa"
+    ],
+    "actions/restore": [
+      "mongodb-k8s",
+      "static",
+      "edcbe2f02b74655421e7c8dd6bce69d4e429ed0eefc3dd5a257e284ace21e0fa"
+    ],
+    "bin/layer_option": [
+      "layer:options",
+      "static",
+      "e959bf29da4c5edff28b2602c24113c4df9e25cdc9f2aa3b5d46c8577b2a40cc"
+    ],
+    "config.yaml": [
+      "mongodb-k8s",
+      "dynamic",
+      "c3a01ee09f7519075d5d5c9066944969f0971ca4cb5179977d39b889e60434bb"
+    ],
+    "copyright": [
+      "layer:leadership",
+      "static",
+      "8ce407829378fc0f72ce44c7f624e4951c7ccb3db1cfb949bee026b701728cc9"
+    ],
+    "copyright.layer-layer-caas-base": [
+      "layer:caas-base",
+      "static",
+      "f6740d66fd60b60f2533d9fcb53907078d1e20920a0219afce7182e2a1c97629"
+    ],
+    "copyright.layer-options": [
+      "layer:options",
+      "static",
+      "f6740d66fd60b60f2533d9fcb53907078d1e20920a0219afce7182e2a1c97629"
+    ],
+    "copyright.layer-status": [
+      "layer:status",
+      "static",
+      "7c0e36e618a8544faaaa3f8e0533c2f1f4a18bcacbdd8b99b537742e6b587d58"
+    ],
+    "docs/status.md": [
+      "layer:status",
+      "static",
+      "975dec9f8c938196e102e954a80226bda293407c4e5ae857c118bf692154702a"
+    ],
+    "hooks/config-changed": [
+      "layer:caas-base",
+      "dynamic",
+      "157765588f1df9480af41ae28e22b5d4b38c772180f42ff0e8ebfbd3333c95c1"
+    ],
+    "hooks/database-storage-attached": [
+      "mongodb-k8s",
+      "dynamic",
+      "157765588f1df9480af41ae28e22b5d4b38c772180f42ff0e8ebfbd3333c95c1"
+    ],
+    "hooks/database-storage-detaching": [
+      "mongodb-k8s",
+      "dynamic",
+      "157765588f1df9480af41ae28e22b5d4b38c772180f42ff0e8ebfbd3333c95c1"
+    ],
+    "hooks/hook.template": [
+      "layer:caas-base",
+      "static",
+      "157765588f1df9480af41ae28e22b5d4b38c772180f42ff0e8ebfbd3333c95c1"
+    ],
+    "hooks/install": [
+      "layer:caas-base",
+      "dynamic",
+      "157765588f1df9480af41ae28e22b5d4b38c772180f42ff0e8ebfbd3333c95c1"
+    ],
+    "hooks/leader-elected": [
+      "layer:caas-base",
+      "dynamic",
+      "157765588f1df9480af41ae28e22b5d4b38c772180f42ff0e8ebfbd3333c95c1"
+    ],
+    "hooks/leader-settings-changed": [
+      "layer:caas-base",
+      "dynamic",
+      "157765588f1df9480af41ae28e22b5d4b38c772180f42ff0e8ebfbd3333c95c1"
+    ],
+    "hooks/mongo-relation-broken": [
+      "layer:caas-base",
+      "dynamic",
+      "157765588f1df9480af41ae28e22b5d4b38c772180f42ff0e8ebfbd3333c95c1"
+    ],
+    "hooks/mongo-relation-changed": [
+      "layer:caas-base",
+      "dynamic",
+      "157765588f1df9480af41ae28e22b5d4b38c772180f42ff0e8ebfbd3333c95c1"
+    ],
+    "hooks/mongo-relation-departed": [
+      "layer:caas-base",
+      "dynamic",
+      "157765588f1df9480af41ae28e22b5d4b38c772180f42ff0e8ebfbd3333c95c1"
+    ],
+    "hooks/mongo-relation-joined": [
+      "layer:caas-base",
+      "dynamic",
+      "157765588f1df9480af41ae28e22b5d4b38c772180f42ff0e8ebfbd3333c95c1"
+    ],
+    "hooks/post-series-upgrade": [
+      "layer:caas-base",
+      "dynamic",
+      "157765588f1df9480af41ae28e22b5d4b38c772180f42ff0e8ebfbd3333c95c1"
+    ],
+    "hooks/pre-series-upgrade": [
+      "layer:caas-base",
+      "dynamic",
+      "157765588f1df9480af41ae28e22b5d4b38c772180f42ff0e8ebfbd3333c95c1"
+    ],
+    "hooks/relations/mongodb/README.md": [
+      "interface:mongodb",
+      "static",
+      "d617b4f44d26488d8c95bc5c6837a58896fae129231c6d2ed0a4a052217cc188"
+    ],
+    "hooks/relations/mongodb/__init__.py": [
+      "interface:mongodb",
+      "static",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "hooks/relations/mongodb/copyright": [
+      "interface:mongodb",
+      "static",
+      "188b8b4aa4477e8d2a0b4c290c451326456a0ddf58e1f314c3f5bf151ddbd8a8"
+    ],
+    "hooks/relations/mongodb/interface.yaml": [
+      "interface:mongodb",
+      "static",
+      "d8f6f83a22e58c9157f4b4b707e0d73a24063dea61f872b96c3d67d54b358fd9"
+    ],
+    "hooks/relations/mongodb/provides.py": [
+      "interface:mongodb",
+      "static",
+      "7fe32258d5d4631419ba20b996e48bcdfc4d66e537f8b2470fef428a3f670b19"
+    ],
+    "hooks/relations/mongodb/requires.py": [
+      "interface:mongodb",
+      "static",
+      "fe51e4681512dfbc8d9edbafb80dffbcf5c97e601c40f1cab35a218fb74dfdca"
+    ],
+    "hooks/start": [
+      "layer:caas-base",
+      "dynamic",
+      "157765588f1df9480af41ae28e22b5d4b38c772180f42ff0e8ebfbd3333c95c1"
+    ],
+    "hooks/stop": [
+      "layer:caas-base",
+      "dynamic",
+      "157765588f1df9480af41ae28e22b5d4b38c772180f42ff0e8ebfbd3333c95c1"
+    ],
+    "hooks/update-status": [
+      "layer:caas-base",
+      "dynamic",
+      "157765588f1df9480af41ae28e22b5d4b38c772180f42ff0e8ebfbd3333c95c1"
+    ],
+    "hooks/upgrade-charm": [
+      "layer:caas-base",
+      "dynamic",
+      "157765588f1df9480af41ae28e22b5d4b38c772180f42ff0e8ebfbd3333c95c1"
+    ],
+    "icon.svg": [
+      "mongodb-k8s",
+      "static",
+      "eb938cc68d4a3009d19a50ad31295de6dda230918ef9461d26b89410c2b8f993"
+    ],
+    "layer.yaml": [
+      "mongodb-k8s",
+      "dynamic",
+      "8d7b70b0978decc35c523bc813096acbe8f465553f02c44162ae05c83af79626"
+    ],
+    "lib/_yaml/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "d3801eff9a2cc5a8692476b75c165401fe308ba5d7df6811f03e97ea9eb81840"
+    ],
+    "lib/bin/charms.reactive": [
+      "layer:caas-base",
+      "dynamic",
+      "8d656590efd3d95f5eccf0e137e162937ffd2f2a243631adabab69beec0195b6"
+    ],
+    "lib/bin/charms.reactive.sh": [
+      "__pip__",
+      "dynamic",
+      "7e3e541fce64fdda5ef7f30ad769b2a95800731661a315877b1a503bd089cb1b"
+    ],
+    "lib/bin/charmsupport": [
+      "__pip__",
+      "dynamic",
+      "0d814e6b342057682a0116e74eafe494246d1a9a5dbce0121bf4d9ba0c5f3cf6"
+    ],
+    "lib/bin/chlp": [
+      "__pip__",
+      "dynamic",
+      "a4f436b46dbc735f04330db2e8663ddb07b705373d45315419c2dd58a59ff4dd"
+    ],
+    "lib/bin/netaddr": [
+      "__pip__",
+      "dynamic",
+      "ff6cc0ff6dc91ec2cdfcccdd8cd03cece7e79b0709c305e4427dc6bae4f280fd"
+    ],
+    "lib/bin/pbr": [
+      "__pip__",
+      "dynamic",
+      "ed8a4ae3f8813c5017c67ecf064be52a782de4c0eb003cb60126cece5b513daa"
+    ],
+    "lib/bin/salt-call": [
+      "__pip__",
+      "dynamic",
+      "e3459e5b1bd1a1e2ba0db47facb8cb73516fccaf9f970abd4cd943d963241cfa"
+    ],
+    "lib/charmhelpers/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "519ff6af5f3a88c49890620880b593d14f359595f2e4ec06bb01b81c5a51e8ff"
+    ],
+    "lib/charmhelpers/cli/README.rst": [
+      "__pip__",
+      "dynamic",
+      "7806bb70cacf8e295114edc577c7fe66a5d971076ec6c685c3a027e93d8cc6dc"
+    ],
+    "lib/charmhelpers/cli/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "69624f400959a9f982f5d12f71bb90bd70c3f4fa1da3bc2e7f73564947790b32"
+    ],
+    "lib/charmhelpers/cli/benchmark.py": [
+      "__pip__",
+      "dynamic",
+      "d04540f5b33d7448861b9ce8dd13b117fb6b5699e4270840d5029abbef62f619"
+    ],
+    "lib/charmhelpers/cli/commands.py": [
+      "__pip__",
+      "dynamic",
+      "e42961878e052dff2f0c61ab64569a176047bd1630e2d8ed164fd669bc605653"
+    ],
+    "lib/charmhelpers/cli/hookenv.py": [
+      "__pip__",
+      "dynamic",
+      "e49effadf39b994a8f5f9a2f6d74cf9a29ec457d59eda9d7c515650bbd1fe1a7"
+    ],
+    "lib/charmhelpers/cli/host.py": [
+      "__pip__",
+      "dynamic",
+      "679a1743977dbcc37fb42dab4c749dc75239b5d41dea42fa42c074b86ac64ba3"
+    ],
+    "lib/charmhelpers/cli/unitdata.py": [
+      "__pip__",
+      "dynamic",
+      "aa21048da61d887cccfcb43e4954e257edcf030315a97d64fa65cf8367c7e5ad"
+    ],
+    "lib/charmhelpers/context.py": [
+      "__pip__",
+      "dynamic",
+      "21a42fec9c2fe53b603552d2b4350f2d894bbe95bcd3e8f7f92b1920546b2f7f"
+    ],
+    "lib/charmhelpers/contrib/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "7200ce4e2e8d11db883e51a60588baf5f0bd7026a1b76da40ab7b46a6f8cdab9"
+    ],
+    "lib/charmhelpers/contrib/ansible/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "c55e90c0746be29d09f5b562da06c67907e7bb53f424148f9a46f2f7ab1dcbf2"
+    ],
+    "lib/charmhelpers/contrib/benchmark/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "aa82506fdf23ad501b777c515509699769e8ad47d2e7791c0c6fdadfaa97a3e8"
+    ],
+    "lib/charmhelpers/contrib/charmhelpers/IMPORT": [
+      "__pip__",
+      "dynamic",
+      "300cc68e15a5b8fead0e2aed7e24003d0016f9a3754086d3382fcbbd069170cf"
+    ],
+    "lib/charmhelpers/contrib/charmhelpers/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "cc8b1b2bd1d51a727607f6e5a5a224d6eaaaea8075e542fc58173b7a7f188681"
+    ],
+    "lib/charmhelpers/contrib/charmsupport/IMPORT": [
+      "__pip__",
+      "dynamic",
+      "3f97d710d11b560810b47ed483aac1e829f85352b324ef654f6b038355590512"
+    ],
+    "lib/charmhelpers/contrib/charmsupport/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "7200ce4e2e8d11db883e51a60588baf5f0bd7026a1b76da40ab7b46a6f8cdab9"
+    ],
+    "lib/charmhelpers/contrib/charmsupport/nrpe.py": [
+      "__pip__",
+      "dynamic",
+      "55bb0afab65b70fbcdd915594d0036ba6f86e778605247749a7aafac5dba7a87"
+    ],
+    "lib/charmhelpers/contrib/charmsupport/volumes.py": [
+      "__pip__",
+      "dynamic",
+      "a9a07f2e193b7cc594c19f747d9e1ded9c28fbc0720decba072f7e063838ad53"
+    ],
+    "lib/charmhelpers/contrib/database/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "b8b7e411eb4ee4dfe3b07e651035bb05db622eb0367651d2b621cebfc34da7d4"
+    ],
+    "lib/charmhelpers/contrib/database/mysql.py": [
+      "__pip__",
+      "dynamic",
+      "6e1d6e119e2d823144ff73a5d808d49f8f8d3629f41077e922d49d0bff5cde1b"
+    ],
+    "lib/charmhelpers/contrib/hahelpers/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "7200ce4e2e8d11db883e51a60588baf5f0bd7026a1b76da40ab7b46a6f8cdab9"
+    ],
+    "lib/charmhelpers/contrib/hahelpers/apache.py": [
+      "__pip__",
+      "dynamic",
+      "12f62b96d2f8a7ddc992929886ea566d8bb6ee040f7fbc32caa9149210c1e34e"
+    ],
+    "lib/charmhelpers/contrib/hahelpers/cluster.py": [
+      "__pip__",
+      "dynamic",
+      "5f07cde8df3577fe85186a172a649bd5eb13e2c43d9943e9f0ad39d40ec2e73d"
+    ],
+    "lib/charmhelpers/contrib/hardening/README.hardening.md": [
+      "__pip__",
+      "dynamic",
+      "7d0ee87dc9a94d2ab433da80c1c12aac79c124c10b7e65e784f6645d0a03592f"
+    ],
+    "lib/charmhelpers/contrib/hardening/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "272288a2dfe7cb4ed4e64cbeb56b730df1ff321b1a6b626665016117b3f724db"
+    ],
+    "lib/charmhelpers/contrib/hardening/apache/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "0069f3b9f531174f6b14931a2ae61da563c9d951590adfc3366ed11633830ed6"
+    ],
+    "lib/charmhelpers/contrib/hardening/apache/checks/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "959adf78dbe01b20b44fa0e48c74e74efa55887b428bcc005137bde7cc25b6a9"
+    ],
+    "lib/charmhelpers/contrib/hardening/apache/checks/config.py": [
+      "__pip__",
+      "dynamic",
+      "6d029ea04c6d94ec67c3824b7c31cbea891c684e168abf22313ef7f141dac324"
+    ],
+    "lib/charmhelpers/contrib/hardening/apache/templates/99-hardening.conf": [
+      "__pip__",
+      "dynamic",
+      "422337694d6cb2388efacaad5ee0b20597211e999f094a0fde95202e626e6aa8"
+    ],
+    "lib/charmhelpers/contrib/hardening/apache/templates/alias.conf": [
+      "__pip__",
+      "dynamic",
+      "6c2986e42152253cad8c9b5b1cdccd98928a672309b91fecb52ef085b6738203"
+    ],
+    "lib/charmhelpers/contrib/hardening/audits/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "68aada3efc514cbac313c94fd12af4b0db89c8d0941e9de8f385d8a0ae9c091f"
+    ],
+    "lib/charmhelpers/contrib/hardening/audits/apache.py": [
+      "__pip__",
+      "dynamic",
+      "16f415ab0749af85db136b3c118a9bc1473a522a45a5d141d5e8c4cea41bfde1"
+    ],
+    "lib/charmhelpers/contrib/hardening/audits/apt.py": [
+      "__pip__",
+      "dynamic",
+      "973146f86bd0cee3714d16664450b9185229378b1039cfbd130b1003abdd8f2d"
+    ],
+    "lib/charmhelpers/contrib/hardening/audits/file.py": [
+      "__pip__",
+      "dynamic",
+      "fc618dda846f45a5bad3012d1f29faa6d1410ace4d3534198f46394ac55f0792"
+    ],
+    "lib/charmhelpers/contrib/hardening/defaults/apache.yaml": [
+      "__pip__",
+      "dynamic",
+      "b6b0828bb597db492496ae681d342c6b96e6899d96638906923c1221ac4ebe0c"
+    ],
+    "lib/charmhelpers/contrib/hardening/defaults/apache.yaml.schema": [
+      "__pip__",
+      "dynamic",
+      "de552d2e3209215e1e3153f691caedb7eaaa662f89bbf97d85e819543a488a9e"
+    ],
+    "lib/charmhelpers/contrib/hardening/defaults/mysql.yaml": [
+      "__pip__",
+      "dynamic",
+      "005c40739af703f764300e3459ba5aeff83380be128ce4b76a0b8c4fa351912e"
+    ],
+    "lib/charmhelpers/contrib/hardening/defaults/mysql.yaml.schema": [
+      "__pip__",
+      "dynamic",
+      "8a7726941198437dec296a288c8ab8ef5fc3e4b05f08beab3241dbc2dee07c65"
+    ],
+    "lib/charmhelpers/contrib/hardening/defaults/os.yaml": [
+      "__pip__",
+      "dynamic",
+      "bffc9ff7616446d711dadfc2aee6607598d9bae131c0d63c66bcd30050cdd558"
+    ],
+    "lib/charmhelpers/contrib/hardening/defaults/os.yaml.schema": [
+      "__pip__",
+      "dynamic",
+      "dc7b818a394bfe0a3ac434a2f79e92a0f3437c1c2cbdeae1f852be1a5894c960"
+    ],
+    "lib/charmhelpers/contrib/hardening/defaults/ssh.yaml": [
+      "__pip__",
+      "dynamic",
+      "54704551b47f072e5fcd4b5b557af403766eb3213ea0cf80001ddcf61037b23f"
+    ],
+    "lib/charmhelpers/contrib/hardening/defaults/ssh.yaml.schema": [
+      "__pip__",
+      "dynamic",
+      "c63c88d5ea3eb0d1ff5a20cd2269b3632e0d66a520682c916fafc94b73b82c0f"
+    ],
+    "lib/charmhelpers/contrib/hardening/harden.py": [
+      "__pip__",
+      "dynamic",
+      "d4e1b3ae997ea63ec6f4b0d99a9576f183f9007f439fa9280ce27bbca1303731"
+    ],
+    "lib/charmhelpers/contrib/hardening/host/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "0069f3b9f531174f6b14931a2ae61da563c9d951590adfc3366ed11633830ed6"
+    ],
+    "lib/charmhelpers/contrib/hardening/host/checks/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "68837f89116a23583e74f6845d3dc2f7222c9e50f6c515789ffc6f535db481e6"
+    ],
+    "lib/charmhelpers/contrib/hardening/host/checks/apt.py": [
+      "__pip__",
+      "dynamic",
+      "97690a39faa9db340b50d45674197313d14643dfc066a558c2f80d84cf850748"
+    ],
+    "lib/charmhelpers/contrib/hardening/host/checks/limits.py": [
+      "__pip__",
+      "dynamic",
+      "a0c2e5726c3c3bc7969b31640174fbcd48eedc820e28cc2007d8a87309a03d12"
+    ],
+    "lib/charmhelpers/contrib/hardening/host/checks/login.py": [
+      "__pip__",
+      "dynamic",
+      "c5d969f648d85c7845781a172a548233fc10c19d211f736383006fd4a4cd5513"
+    ],
+    "lib/charmhelpers/contrib/hardening/host/checks/minimize_access.py": [
+      "__pip__",
+      "dynamic",
+      "3f1d4e43de91352037b561585b47969089347a59d6b23940ca1a749fe14ccb94"
+    ],
+    "lib/charmhelpers/contrib/hardening/host/checks/pam.py": [
+      "__pip__",
+      "dynamic",
+      "7618ea40db013d0f368ea43e1439b1b8ac88f904fb9d57cf2c0a4ee438415534"
+    ],
+    "lib/charmhelpers/contrib/hardening/host/checks/profile.py": [
+      "__pip__",
+      "dynamic",
+      "742f830707c7bd200b196cec3dcf29e954ce467db98ceeec8ed54f2b89bb5c96"
+    ],
+    "lib/charmhelpers/contrib/hardening/host/checks/securetty.py": [
+      "__pip__",
+      "dynamic",
+      "480ecb9fd756d413903288552abc757c94dc3606577e8a777274fd8666e4cf95"
+    ],
+    "lib/charmhelpers/contrib/hardening/host/checks/suid_sgid.py": [
+      "__pip__",
+      "dynamic",
+      "3da340536a09973e9dad75a990886d21ee2bc5b6b3c88f425d9bebdb5bdbea37"
+    ],
+    "lib/charmhelpers/contrib/hardening/host/checks/sysctl.py": [
+      "__pip__",
+      "dynamic",
+      "a3e9f2f4e9eda269d328ffa269e17287e8ed2dec46d38fb5d58def18e48d180c"
+    ],
+    "lib/charmhelpers/contrib/hardening/host/templates/10.hardcore.conf": [
+      "__pip__",
+      "dynamic",
+      "df6a7e5e9ea74dd62a0f009191f1deb48050f4cf3174015f30ce13d16d37b2f9"
+    ],
+    "lib/charmhelpers/contrib/hardening/host/templates/99-hardening.sh": [
+      "__pip__",
+      "dynamic",
+      "62a950f3aa70a971c84e6356a6391c2ac001a6531f15d1b6fc26da10f085bc92"
+    ],
+    "lib/charmhelpers/contrib/hardening/host/templates/99-juju-hardening.conf": [
+      "__pip__",
+      "dynamic",
+      "efeb9f0bfd9da54878ddf96fb149a13de52724e6e7d3145b8c2194ec18e6ee2b"
+    ],
+    "lib/charmhelpers/contrib/hardening/host/templates/login.defs": [
+      "__pip__",
+      "dynamic",
+      "6e29471cc297356d3c7c262b002a87494c7af4cf41ce07fd9887d47a92bc7e2d"
+    ],
+    "lib/charmhelpers/contrib/hardening/host/templates/modules": [
+      "__pip__",
+      "dynamic",
+      "415ba500434040d8c02994b0dc6bc295fe254e4ddf2c5f5c82a37c12b281e52d"
+    ],
+    "lib/charmhelpers/contrib/hardening/host/templates/passwdqc.conf": [
+      "__pip__",
+      "dynamic",
+      "0e8250e2924d672c9bc72f6bb283038905594fa994b25af363fef781fb65c18c"
+    ],
+    "lib/charmhelpers/contrib/hardening/host/templates/pinerolo_profile.sh": [
+      "__pip__",
+      "dynamic",
+      "2f71f3bc01e8911357d52550f1d506f314189fb2f6881b4b0a95936c88b22335"
+    ],
+    "lib/charmhelpers/contrib/hardening/host/templates/securetty": [
+      "__pip__",
+      "dynamic",
+      "0ecdec6b3cfa7cc804234a0c2d1597b7e4cea79805d8593c9a8bd50f348b0129"
+    ],
+    "lib/charmhelpers/contrib/hardening/host/templates/tally2": [
+      "__pip__",
+      "dynamic",
+      "e95c5dcf33c9233febd901197c3e7953a701feb92043e85bb31467a13101e1e4"
+    ],
+    "lib/charmhelpers/contrib/hardening/mysql/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "0069f3b9f531174f6b14931a2ae61da563c9d951590adfc3366ed11633830ed6"
+    ],
+    "lib/charmhelpers/contrib/hardening/mysql/checks/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "fa25d99bd9381c835f16670e9b1dddb12fabed27202e478101375afa957bbdc0"
+    ],
+    "lib/charmhelpers/contrib/hardening/mysql/checks/config.py": [
+      "__pip__",
+      "dynamic",
+      "b66a79200413b8bae1416578342c258c710bacaeac21cc2d0b38fa707496e693"
+    ],
+    "lib/charmhelpers/contrib/hardening/mysql/templates/hardening.cnf": [
+      "__pip__",
+      "dynamic",
+      "e8409b0edfade0f607b82d727a2acd9a3a38a80d13866603dfa33f2fe23774f3"
+    ],
+    "lib/charmhelpers/contrib/hardening/ssh/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "0069f3b9f531174f6b14931a2ae61da563c9d951590adfc3366ed11633830ed6"
+    ],
+    "lib/charmhelpers/contrib/hardening/ssh/checks/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "851d341b8014748a36eafce44ceabdabf9f1016aaaa3b63be762136e5b1f441c"
+    ],
+    "lib/charmhelpers/contrib/hardening/ssh/checks/config.py": [
+      "__pip__",
+      "dynamic",
+      "9e1ebf1eb35cec746fa48012b36f1b35d17dfb5948c74f79147a7c481ecb3a51"
+    ],
+    "lib/charmhelpers/contrib/hardening/ssh/templates/ssh_config": [
+      "__pip__",
+      "dynamic",
+      "4e971ac65e3f226dce97ae66a76765250dffa96a8db4c924f0b2bf3f156b2204"
+    ],
+    "lib/charmhelpers/contrib/hardening/ssh/templates/sshd_config": [
+      "__pip__",
+      "dynamic",
+      "694fa944909af080dd81d95fcd162b367d0a00e605b4ca1f156bad00e59546de"
+    ],
+    "lib/charmhelpers/contrib/hardening/templating.py": [
+      "__pip__",
+      "dynamic",
+      "222c39942e8521a746747eb70ab30eb985ffedb187c2d96d33002125634ecab0"
+    ],
+    "lib/charmhelpers/contrib/hardening/utils.py": [
+      "__pip__",
+      "dynamic",
+      "539177707f7db6430ee84a22e410a7734afc3a6764610ada783c462ae9cc3761"
+    ],
+    "lib/charmhelpers/contrib/mellanox/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "4f0df770a0279743b329ffc3e55a95cabfff7969f25bac47be1cc6e92254b29b"
+    ],
+    "lib/charmhelpers/contrib/mellanox/infiniband.py": [
+      "__pip__",
+      "dynamic",
+      "5178e316ef4df2263d60e020a99956f083a4c0e8db0559eb6dfb142023216955"
+    ],
+    "lib/charmhelpers/contrib/network/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "7200ce4e2e8d11db883e51a60588baf5f0bd7026a1b76da40ab7b46a6f8cdab9"
+    ],
+    "lib/charmhelpers/contrib/network/ip.py": [
+      "__pip__",
+      "dynamic",
+      "16eacd9ffa7dd4ce91b1133a82b7269deb49bd0b94e27024ff5326b986b7ab23"
+    ],
+    "lib/charmhelpers/contrib/network/ovs/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "27260ee0425a9bba46b0ea2fbbd268ee3ffa600336a10dfffd5c8a88ba505092"
+    ],
+    "lib/charmhelpers/contrib/network/ovs/ovn.py": [
+      "__pip__",
+      "dynamic",
+      "14e304066aa06fef59f67e27872ebd66af099f1c64bd9be513614dd6ef1f0cce"
+    ],
+    "lib/charmhelpers/contrib/network/ovs/ovsdb.py": [
+      "__pip__",
+      "dynamic",
+      "54e3c47f04e8acbe0883b4eefdbbfe80fb314be141cd920a76003e131be0d373"
+    ],
+    "lib/charmhelpers/contrib/network/ovs/utils.py": [
+      "__pip__",
+      "dynamic",
+      "0fa778651aa72733f6887418b07ce616c5e5498fbbc0c152e7381cc96c2f825f"
+    ],
+    "lib/charmhelpers/contrib/network/ufw.py": [
+      "__pip__",
+      "dynamic",
+      "d7e392af512115c216d53bb3fc2cc1fa1ecbbf880ff9b4982397541a640fba10"
+    ],
+    "lib/charmhelpers/contrib/openstack/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "7200ce4e2e8d11db883e51a60588baf5f0bd7026a1b76da40ab7b46a6f8cdab9"
+    ],
+    "lib/charmhelpers/contrib/openstack/alternatives.py": [
+      "__pip__",
+      "dynamic",
+      "589430f7479f785231b6e5e06d1a4e60e3e3c13d6906764783259cd2e2f8f7a0"
+    ],
+    "lib/charmhelpers/contrib/openstack/audits/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "49682bc215ae1ce3f8e68e024fe157eb1cc7473f372565d9d48d56648f1650be"
+    ],
+    "lib/charmhelpers/contrib/openstack/audits/openstack_security_guide.py": [
+      "__pip__",
+      "dynamic",
+      "28d9d87e2982a5aae5f878280ce9ee327752520866c548e0012cee97365db38f"
+    ],
+    "lib/charmhelpers/contrib/openstack/cert_utils.py": [
+      "__pip__",
+      "dynamic",
+      "38b028b35e0ed27d1385b191a7ae7af212dc756524008c29483d0fbf2f4bf60e"
+    ],
+    "lib/charmhelpers/contrib/openstack/context.py": [
+      "__pip__",
+      "dynamic",
+      "4ff5597bfb022523d43c7ebd6c2a3a7bf63edd9a4e1f39f193c5f76751d4b93e"
+    ],
+    "lib/charmhelpers/contrib/openstack/deferred_events.py": [
+      "__pip__",
+      "dynamic",
+      "2094cbe062057b9a103f3bb54bea5f95e75abb88e5579b0dcba47eb45f54ad64"
+    ],
+    "lib/charmhelpers/contrib/openstack/exceptions.py": [
+      "__pip__",
+      "dynamic",
+      "c5bb69cd6c0513bb38cc0b9685469a4de65d408a7ea7f1244da540fb9999931d"
+    ],
+    "lib/charmhelpers/contrib/openstack/files/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "3c9fe89c11769319e8bb9fc9105b2aa33528af4f0f84a407390d9ffbf0f12d47"
+    ],
+    "lib/charmhelpers/contrib/openstack/files/check_haproxy.sh": [
+      "__pip__",
+      "dynamic",
+      "eaa8d5ccc9e6f625fa4b31903a1cc633379264d8797b9d13eb9e20e1e544ff54"
+    ],
+    "lib/charmhelpers/contrib/openstack/files/check_haproxy_queue_depth.sh": [
+      "__pip__",
+      "dynamic",
+      "5b17d66803fcd99425ca8ea90c90aa3c7db3c8f6b91ea1f3cd92f8f5c037f53d"
+    ],
+    "lib/charmhelpers/contrib/openstack/files/policy_rc_d_script.py": [
+      "__pip__",
+      "dynamic",
+      "480b8f376c59977854cff8113b05d4f7f0caebab4d7d32c706fc5517afaa00ce"
+    ],
+    "lib/charmhelpers/contrib/openstack/ha/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "4f0df770a0279743b329ffc3e55a95cabfff7969f25bac47be1cc6e92254b29b"
+    ],
+    "lib/charmhelpers/contrib/openstack/ha/utils.py": [
+      "__pip__",
+      "dynamic",
+      "8322229793efc8b558069ba69b82cbe81c573d455995906320594be97cba67f4"
+    ],
+    "lib/charmhelpers/contrib/openstack/ip.py": [
+      "__pip__",
+      "dynamic",
+      "5bf763de55bcb8ac5f516bd6aa7134fcd4144c5fc6f5e5a37489626748a38688"
+    ],
+    "lib/charmhelpers/contrib/openstack/keystone.py": [
+      "__pip__",
+      "dynamic",
+      "8a4155f008e3ec192443ec41a7b320ef7ef478cc940b81a4dd0c6eacdc0d5c71"
+    ],
+    "lib/charmhelpers/contrib/openstack/neutron.py": [
+      "__pip__",
+      "dynamic",
+      "fade5e06807a4bf07539fd99174072d0d75b568a53cf644e62baf61972b3b457"
+    ],
+    "lib/charmhelpers/contrib/openstack/policy_rcd.py": [
+      "__pip__",
+      "dynamic",
+      "59f6c229f1bebd96aec4a4d53046f86b10c41dafa9ce8d7169c6c601064f15e8"
+    ],
+    "lib/charmhelpers/contrib/openstack/policyd.py": [
+      "__pip__",
+      "dynamic",
+      "5e6f72da605408214313c7b1f62d30dc9b2a76809b7ae2dd3b20295881587c53"
+    ],
+    "lib/charmhelpers/contrib/openstack/ssh_migrations.py": [
+      "__pip__",
+      "dynamic",
+      "3cce2776be410d16a0447e8421f0d2c5e35615c5c5a2019686405c068096fcb2"
+    ],
+    "lib/charmhelpers/contrib/openstack/templates/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "3c9fe89c11769319e8bb9fc9105b2aa33528af4f0f84a407390d9ffbf0f12d47"
+    ],
+    "lib/charmhelpers/contrib/openstack/templates/ceph.conf": [
+      "__pip__",
+      "dynamic",
+      "2bcf066b17e8650686574620161c8e7346ed9f1786d33c085dc1f03bfa0e8525"
+    ],
+    "lib/charmhelpers/contrib/openstack/templates/git.upstart": [
+      "__pip__",
+      "dynamic",
+      "a1d3e125c84e4f47720e874275784ea5a14c0ce2feda58b68c9da3bad7233fb7"
+    ],
+    "lib/charmhelpers/contrib/openstack/templates/haproxy.cfg": [
+      "__pip__",
+      "dynamic",
+      "e85de59e30f6af571b4ec0abc244dd4609e76600a95c648acf17ad318f86769a"
+    ],
+    "lib/charmhelpers/contrib/openstack/templates/logrotate": [
+      "__pip__",
+      "dynamic",
+      "8062b8a93b20099eab49beefba50006d3a66773a4655cd01fdaffcf2c2d38c0b"
+    ],
+    "lib/charmhelpers/contrib/openstack/templates/memcached.conf": [
+      "__pip__",
+      "dynamic",
+      "2243cc5ae1f36e7c01d832ac9540048ae424e27a78d343589f57c33fd4f756ca"
+    ],
+    "lib/charmhelpers/contrib/openstack/templates/openstack_https_frontend": [
+      "__pip__",
+      "dynamic",
+      "21ccfe1ed6561ab3038e193d1c5fb6323b9191190a6ccb7b345faa6788ff2b12"
+    ],
+    "lib/charmhelpers/contrib/openstack/templates/openstack_https_frontend.conf": [
+      "__pip__",
+      "dynamic",
+      "21ccfe1ed6561ab3038e193d1c5fb6323b9191190a6ccb7b345faa6788ff2b12"
+    ],
+    "lib/charmhelpers/contrib/openstack/templates/section-ceph-bluestore-compression": [
+      "__pip__",
+      "dynamic",
+      "72a0ffa37a4920cd0efde0e15b24193a8854a43f7c300448bddc90cc3a377091"
+    ],
+    "lib/charmhelpers/contrib/openstack/templates/section-keystone-authtoken": [
+      "__pip__",
+      "dynamic",
+      "81f55977ea3bc970ceda4783112c1da126622035ed0f0ba7e5d592d4423735e2"
+    ],
+    "lib/charmhelpers/contrib/openstack/templates/section-keystone-authtoken-legacy": [
+      "__pip__",
+      "dynamic",
+      "9a5f52457910d652a136d661453d800c69bba1414039b1717d3f03a589ca6d11"
+    ],
+    "lib/charmhelpers/contrib/openstack/templates/section-keystone-authtoken-mitaka": [
+      "__pip__",
+      "dynamic",
+      "ab46f26712eec772769a82c6242181cd7fc343e26f5024ba695c05054675d964"
+    ],
+    "lib/charmhelpers/contrib/openstack/templates/section-keystone-authtoken-v3only": [
+      "__pip__",
+      "dynamic",
+      "e260c4faf76c9fff550fd6e9fc060be052eb5f816931fbae65d96832ea912d6a"
+    ],
+    "lib/charmhelpers/contrib/openstack/templates/section-oslo-cache": [
+      "__pip__",
+      "dynamic",
+      "4ba5bb69c443646877511dbd698731c2e942dcc582448a5a07d94bf4a1b63b02"
+    ],
+    "lib/charmhelpers/contrib/openstack/templates/section-oslo-messaging-rabbit": [
+      "__pip__",
+      "dynamic",
+      "f74b5f4b7a2e8c5bfa3252313c2259b15c6d5c7a01e1fa35b072b1c8fbe14e55"
+    ],
+    "lib/charmhelpers/contrib/openstack/templates/section-oslo-messaging-rabbit-ocata": [
+      "__pip__",
+      "dynamic",
+      "f4353d78ccf0a79380d8ca9f0be7d2f1e8421ac6f794c22c418897754a51a041"
+    ],
+    "lib/charmhelpers/contrib/openstack/templates/section-oslo-middleware": [
+      "__pip__",
+      "dynamic",
+      "fc87b688b4d3a14d853a210cb0db12eba7da3403128b4a33db2b98d956dfa381"
+    ],
+    "lib/charmhelpers/contrib/openstack/templates/section-oslo-notifications": [
+      "__pip__",
+      "dynamic",
+      "2fe964b95870a4176a6f1f97904d3cdbc23f00f925ae10f43fe0746f83ac45ad"
+    ],
+    "lib/charmhelpers/contrib/openstack/templates/section-placement": [
+      "__pip__",
+      "dynamic",
+      "606a0316db9eb829452839ce841a120a6fa4fad4ca8b6cb796666e448db916c3"
+    ],
+    "lib/charmhelpers/contrib/openstack/templates/section-rabbitmq-oslo": [
+      "__pip__",
+      "dynamic",
+      "f357d7eaf5ec62b3524bfe746e278840e5a598c55f39b45210153c2821d87d14"
+    ],
+    "lib/charmhelpers/contrib/openstack/templates/section-zeromq": [
+      "__pip__",
+      "dynamic",
+      "a81b5e26d8f8b4800438e73b92402f9da6c34e94b240a50d6cd854ada12fa32e"
+    ],
+    "lib/charmhelpers/contrib/openstack/templates/vendor_data.json": [
+      "__pip__",
+      "dynamic",
+      "1b426ddc47dba154df63e86d5c63772286c9129f5aa41d2c46e1146f42873555"
+    ],
+    "lib/charmhelpers/contrib/openstack/templates/wsgi-openstack-api.conf": [
+      "__pip__",
+      "dynamic",
+      "e4efafad1f8536589e400414c2e28695aad04b2fc8212a5e9fe5a785d869b42f"
+    ],
+    "lib/charmhelpers/contrib/openstack/templates/wsgi-openstack-metadata.conf": [
+      "__pip__",
+      "dynamic",
+      "e4efafad1f8536589e400414c2e28695aad04b2fc8212a5e9fe5a785d869b42f"
+    ],
+    "lib/charmhelpers/contrib/openstack/templating.py": [
+      "__pip__",
+      "dynamic",
+      "f8fafe242edae3a0be6d854acd198ac98d92dd71b21a67142d1362a8c87d57f9"
+    ],
+    "lib/charmhelpers/contrib/openstack/utils.py": [
+      "__pip__",
+      "dynamic",
+      "080db0c73ecf6814a1d3f615d488a415cb3c0aafa3ad983033f825264d30424c"
+    ],
+    "lib/charmhelpers/contrib/openstack/vaultlocker.py": [
+      "__pip__",
+      "dynamic",
+      "6ba8c3a285a3947347474ccb95e91d06729bc90ccf045e24d2f893ee3e8228a2"
+    ],
+    "lib/charmhelpers/contrib/peerstorage/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "abfe3c2437e11eaa734b008b807166c6039d176ddfb42db7a77b41d287c03509"
+    ],
+    "lib/charmhelpers/contrib/python.py": [
+      "__pip__",
+      "dynamic",
+      "9deca1a432884a91ff9095ebc2b4bce6f72416b54c475d62e5bea374acf2df57"
+    ],
+    "lib/charmhelpers/contrib/saltstack/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "701647c0e1134cc5cb7d6f15ee365931880bcf27016721c3d2b1bd8c41ad208c"
+    ],
+    "lib/charmhelpers/contrib/ssl/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "ef9c249fba1c9517abc0d626324af3734f54437a8eccd2fd8e1661998ac0f730"
+    ],
+    "lib/charmhelpers/contrib/ssl/service.py": [
+      "__pip__",
+      "dynamic",
+      "d0903f063373bcd1d1163cf4303d8365cbb76eac30d3ee26531cc3322bcfff4a"
+    ],
+    "lib/charmhelpers/contrib/storage/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "7200ce4e2e8d11db883e51a60588baf5f0bd7026a1b76da40ab7b46a6f8cdab9"
+    ],
+    "lib/charmhelpers/contrib/storage/linux/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "7200ce4e2e8d11db883e51a60588baf5f0bd7026a1b76da40ab7b46a6f8cdab9"
+    ],
+    "lib/charmhelpers/contrib/storage/linux/bcache.py": [
+      "__pip__",
+      "dynamic",
+      "ce0b05f05105bcf0c8c8d806206ef8843ccf4e75d8cc971caba29d7f3c560b99"
+    ],
+    "lib/charmhelpers/contrib/storage/linux/ceph.py": [
+      "__pip__",
+      "dynamic",
+      "20e441db15aabfd439e81bd4fe4de5db7665f650cd1e34d1e7da68b786345a23"
+    ],
+    "lib/charmhelpers/contrib/storage/linux/loopback.py": [
+      "__pip__",
+      "dynamic",
+      "6d6bd0968e1cffaca55325664d9c5001c09c39b792bd26f8a3cb4c665a16f195"
+    ],
+    "lib/charmhelpers/contrib/storage/linux/lvm.py": [
+      "__pip__",
+      "dynamic",
+      "13d54d50bb8b92bd43795233190f512f63f006d63fb95bad1d9e5bad5ecf3376"
+    ],
+    "lib/charmhelpers/contrib/storage/linux/utils.py": [
+      "__pip__",
+      "dynamic",
+      "5b1536346ddde2ff8258c5a2afc19afa6d6476e8d962a693b7b33c3b8bef35da"
+    ],
+    "lib/charmhelpers/contrib/sysctl/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "lib/charmhelpers/contrib/sysctl/watermark_scale_factor.py": [
+      "__pip__",
+      "dynamic",
+      "050b669a5ab4371e9270b313cc897f2ffcbb37b204b18d0cb2490553f61a84b1"
+    ],
+    "lib/charmhelpers/contrib/templating/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "7200ce4e2e8d11db883e51a60588baf5f0bd7026a1b76da40ab7b46a6f8cdab9"
+    ],
+    "lib/charmhelpers/contrib/templating/contexts.py": [
+      "__pip__",
+      "dynamic",
+      "6e1325413345585f3776aedb5b93bd6b786cb6e0d5431024909788c4216b07e8"
+    ],
+    "lib/charmhelpers/contrib/templating/jinja.py": [
+      "__pip__",
+      "dynamic",
+      "4a8a01f083d83c65ca01f23fcf7211c8590bdda22c8a0cf8f35bf6364f9d79a5"
+    ],
+    "lib/charmhelpers/contrib/templating/pyformat.py": [
+      "__pip__",
+      "dynamic",
+      "5c488f6523db23f82f24a1bc391cea9c570d3ab27220b29b3eabd133261642ef"
+    ],
+    "lib/charmhelpers/contrib/unison/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "5a4bcfa00f5b240cc77f4e2b82ea00947f9413e7f346bc09013ed7cd5e56ee02"
+    ],
+    "lib/charmhelpers/coordinator.py": [
+      "__pip__",
+      "dynamic",
+      "6eb9cde257b3a364a6cd6e440001c409c171d3f9e66bd7b003616e206847c4c0"
+    ],
+    "lib/charmhelpers/core/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "7200ce4e2e8d11db883e51a60588baf5f0bd7026a1b76da40ab7b46a6f8cdab9"
+    ],
+    "lib/charmhelpers/core/decorators.py": [
+      "__pip__",
+      "dynamic",
+      "99d187ea07f1780d3e95b0c6dcc4c51ef33c0f3335cf0f5d8561fc811f137556"
+    ],
+    "lib/charmhelpers/core/files.py": [
+      "__pip__",
+      "dynamic",
+      "aebc21fa7beae13ae5b87de858fc00fad06904d0d35f72bdb49c2c4900b75f13"
+    ],
+    "lib/charmhelpers/core/fstab.py": [
+      "__pip__",
+      "dynamic",
+      "0c5eca5f455e4c46da237176112a960d067b702b725f8c53dfecc7aad453ea39"
+    ],
+    "lib/charmhelpers/core/hookenv.py": [
+      "__pip__",
+      "dynamic",
+      "5a6ef73064f06b164001e7f69ffcd2b164ee8dbe8f4bf577ac7ed506b14b2a11"
+    ],
+    "lib/charmhelpers/core/host.py": [
+      "__pip__",
+      "dynamic",
+      "bf3975d783b461e2fa9e057c5116e7f1f6738fc4c04a22144ee98bd9fce301fd"
+    ],
+    "lib/charmhelpers/core/host_factory/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "lib/charmhelpers/core/host_factory/centos.py": [
+      "__pip__",
+      "dynamic",
+      "4e2c5170a23f0c2eb91a10ba374597c1355bbbb94bbb09339242c440c775a882"
+    ],
+    "lib/charmhelpers/core/host_factory/ubuntu.py": [
+      "__pip__",
+      "dynamic",
+      "92b651cf81a81cde7524f7c5cbe08b881100abcabe1f61a1806396cccabc66ca"
+    ],
+    "lib/charmhelpers/core/hugepage.py": [
+      "__pip__",
+      "dynamic",
+      "b9e936d52b565beab1181d21b8a22f85f442c29e8cc3e96c1eea1529dd9a9aed"
+    ],
+    "lib/charmhelpers/core/kernel.py": [
+      "__pip__",
+      "dynamic",
+      "8cbbad46f9902f226f15af0c0de2a68d8ee23873bc60eb1a1e981b1f7da7634f"
+    ],
+    "lib/charmhelpers/core/kernel_factory/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "lib/charmhelpers/core/kernel_factory/centos.py": [
+      "__pip__",
+      "dynamic",
+      "b4e04f888abd326a7b11ed9a6d6ab3ed6a91a2245fd4f5f89b13910b37a193bd"
+    ],
+    "lib/charmhelpers/core/kernel_factory/ubuntu.py": [
+      "__pip__",
+      "dynamic",
+      "a06289e52c5b81a823bd8e9c9d43ac18dd1616e16edd71e2a498d096d6592249"
+    ],
+    "lib/charmhelpers/core/services/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "65f4ffe4566c95ec2757d07b63dafe5bfc8ad07c2d113f2351e2b15def658595"
+    ],
+    "lib/charmhelpers/core/services/base.py": [
+      "__pip__",
+      "dynamic",
+      "eafacf0e519467712fd2770f93cd2a7434226fc41011d515b4f8910a197bc772"
+    ],
+    "lib/charmhelpers/core/services/helpers.py": [
+      "__pip__",
+      "dynamic",
+      "995e0c72d6a02a454309036c1e9b097dcc413bb609830286174adc784eb70349"
+    ],
+    "lib/charmhelpers/core/strutils.py": [
+      "__pip__",
+      "dynamic",
+      "a96116902f6f7cb3d7c4e7c3b7a031996e8826c26328ffeae90c4712e1a85c5b"
+    ],
+    "lib/charmhelpers/core/sysctl.py": [
+      "__pip__",
+      "dynamic",
+      "f2e24034300853349e7e2e7082a5a506bd2f325339f8e8a9c602c1efa2c37992"
+    ],
+    "lib/charmhelpers/core/templating.py": [
+      "__pip__",
+      "dynamic",
+      "8979270b3ce589c906c138d99d0e60e5c1343b7e8765e581fca5e78d47522412"
+    ],
+    "lib/charmhelpers/core/unitdata.py": [
+      "__pip__",
+      "dynamic",
+      "a0de03bfa641d25d1a8cad50ed99857455cdb6539b0514ff04c656ae8f457bc5"
+    ],
+    "lib/charmhelpers/fetch/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "14da5689d70f25212f94ad522e0645d85569f9d9b3fba74c4be632fa3ee62a3e"
+    ],
+    "lib/charmhelpers/fetch/archiveurl.py": [
+      "__pip__",
+      "dynamic",
+      "c1c6a8af3310749e2e1c668c9bc343b308ed7924f3b6c7410b453bf78116a34d"
+    ],
+    "lib/charmhelpers/fetch/bzrurl.py": [
+      "__pip__",
+      "dynamic",
+      "c8fcf6dd4e2e0506a35d6b01a0dc325b3356f824f005d39c2381439d2401d232"
+    ],
+    "lib/charmhelpers/fetch/centos.py": [
+      "__pip__",
+      "dynamic",
+      "7f016cc4e0dbf6600c35f4a2c8d072cb58615a9c0eef95635d413d516ecf76ec"
+    ],
+    "lib/charmhelpers/fetch/giturl.py": [
+      "__pip__",
+      "dynamic",
+      "d5f355e38e890d552f8a89e642db99c8c73ae2fffd9628b3c1faf226ce60d1c1"
+    ],
+    "lib/charmhelpers/fetch/python/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "5dab6b633dfc7cfcec96ac52755281e13f92f2eebda5d8a2ad5b4a03ab32403d"
+    ],
+    "lib/charmhelpers/fetch/python/debug.py": [
+      "__pip__",
+      "dynamic",
+      "3bb28475005573777b0254b8ab25419ddba213fe344a8a58ca16f47cd35e484c"
+    ],
+    "lib/charmhelpers/fetch/python/packages.py": [
+      "__pip__",
+      "dynamic",
+      "216aeec560cc6976044516d855286107c726eb4720cd62f3aed602240609c4a6"
+    ],
+    "lib/charmhelpers/fetch/python/rpdb.py": [
+      "__pip__",
+      "dynamic",
+      "f1b564811d80e483cc415862c37599b0f2146a1dd28bfde189c739cad7cf8be0"
+    ],
+    "lib/charmhelpers/fetch/python/version.py": [
+      "__pip__",
+      "dynamic",
+      "3d4f813758dd572355ca0983304bcf73b2ecd56a78de44cac99bef0f4e4a2eec"
+    ],
+    "lib/charmhelpers/fetch/snap.py": [
+      "__pip__",
+      "dynamic",
+      "11af0270d3f917835a65348bc5dae9aa067b05ac7544ece96af49ec0c8150373"
+    ],
+    "lib/charmhelpers/fetch/ubuntu.py": [
+      "__pip__",
+      "dynamic",
+      "400fad450e760b84e02c6c5a301b4645254c04806228be07957b27bc0bcdfacf"
+    ],
+    "lib/charmhelpers/fetch/ubuntu_apt_pkg.py": [
+      "__pip__",
+      "dynamic",
+      "fec0e952cebd44543221d79f2db1fd9b549a9f86fb94bba0009c600447bfafaf"
+    ],
+    "lib/charmhelpers/osplatform.py": [
+      "__pip__",
+      "dynamic",
+      "bd339d1553cf6d02136deb25ffb1082c913e33481dd62a88f2f1a8271ebd7b28"
+    ],
+    "lib/charmhelpers/payload/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "06c2f163b18000529b778fa731e6588715d241c7f81e5682e1700fd3a70d5fa8"
+    ],
+    "lib/charmhelpers/payload/archive.py": [
+      "__pip__",
+      "dynamic",
+      "6f94cfcd0fa6585a33d97b70d06bc34dc827a274f7ff85d5463da472b11266d5"
+    ],
+    "lib/charmhelpers/payload/execd.py": [
+      "__pip__",
+      "dynamic",
+      "eb85b21238719c18858af9ad4971989856aeb92c946244629a5afd0b2abac402"
+    ],
+    "lib/charmhelpers/version.py": [
+      "__pip__",
+      "dynamic",
+      "04fe4bdea44ea8d00935fdd19f2af20f37dd88c1b22e39bfe8e3e33148157fac"
+    ],
+    "lib/charms/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "4032724b98ed267185b12b8ec78dd9bcb0423ab1c89a6f0dad99397fd51159d9"
+    ],
+    "lib/charms/layer/caas_base.py": [
+      "layer:caas-base",
+      "static",
+      "d9eaf6a4d660893ad1d0451583e39344340ed2fca9cbd8c72319806529034832"
+    ],
+    "lib/charms/layer/options.py": [
+      "layer:options",
+      "static",
+      "8ae7a07d22542fc964f2d2bee8219d1c78a68dace70a1b38d36d4aea47b1c3b2"
+    ],
+    "lib/charms/layer/status.py": [
+      "layer:status",
+      "static",
+      "d560a5e07b2e5f2b0f25f30e1f0278b06f3f90c01e4dbad5c83d71efc79018c6"
+    ],
+    "lib/charms/leadership.py": [
+      "layer:leadership",
+      "static",
+      "20ffcbbc08147506759726ad51567420659ffb8a2e0121079240b8706658e332"
+    ],
+    "lib/charms/osm/k8s.py": [
+      "layer:osm-common",
+      "static",
+      "d7682bb0517badb1d85b915db8ed09bb667ce7c4dea4508fb348d9500bcf5296"
+    ],
+    "lib/charms/reactive/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "c048ff93d26c2fbfd13b1453e41adc86c2f16e274ea87ac04055682597978a4a"
+    ],
+    "lib/charms/reactive/bus.py": [
+      "__pip__",
+      "dynamic",
+      "1481a929a2feb6cdf3dec91a37d4900518acfcc0434c1031060ee83b0d4d6540"
+    ],
+    "lib/charms/reactive/cli.py": [
+      "__pip__",
+      "dynamic",
+      "a5fe7968d3a1978006fdd47e81acfd57d8c59c0c0fe45d52a829b1dda8349811"
+    ],
+    "lib/charms/reactive/decorators.py": [
+      "__pip__",
+      "dynamic",
+      "bd317a5f4ee887415c2246f929a11eef38acb62a53a33f2a5836b472f12f3217"
+    ],
+    "lib/charms/reactive/endpoints.py": [
+      "__pip__",
+      "dynamic",
+      "6dab63f243bc0c5f7ee57ae0f8764a4d273e57b8e21f557f9d7fad90f6e43129"
+    ],
+    "lib/charms/reactive/flags.py": [
+      "__pip__",
+      "dynamic",
+      "3b9b9d942e72566ba8aa3d260d0c5b9ad1b18b9949f4b1fc763b7fc945135b2a"
+    ],
+    "lib/charms/reactive/helpers.py": [
+      "__pip__",
+      "dynamic",
+      "4df2a260857ce36b57cda1ff62598e1e1cedc5b36bfbf2552e904784e0463a12"
+    ],
+    "lib/charms/reactive/patterns/request_response.py": [
+      "__pip__",
+      "dynamic",
+      "2e6a783a65691daa422a9990f0aca16c811b6653941dc31b2b8c5dfc9648417e"
+    ],
+    "lib/charms/reactive/relations.py": [
+      "__pip__",
+      "dynamic",
+      "bcb8c3a6e7ad30508185151d8378ff8abdac94ff3ec1950deeb5754e688f715c"
+    ],
+    "lib/charms/reactive/trace.py": [
+      "__pip__",
+      "dynamic",
+      "49b2550cea43bab0068f50dd74d4567a901cd39cfa279d2e656743b8727ecdf0"
+    ],
+    "lib/importlib_resources/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "cee03495b460b55542700ced334cf92ee06238257d2ffdeab48ea65b6a79c408"
+    ],
+    "lib/importlib_resources/_adapters.py": [
+      "__pip__",
+      "dynamic",
+      "a39d6d3f686956da213f7de0498c809063692df60306ac7162c69dca24598b51"
+    ],
+    "lib/importlib_resources/_common.py": [
+      "__pip__",
+      "dynamic",
+      "888c40690868b5287a4cb2d411f2ffca75367f311ec87333f4970be3a99484b8"
+    ],
+    "lib/importlib_resources/_compat.py": [
+      "__pip__",
+      "dynamic",
+      "dcba6421f78df71e285e345e6b94f164fe556213e5cee5518467be844bfe4b4b"
+    ],
+    "lib/importlib_resources/_itertools.py": [
+      "__pip__",
+      "dynamic",
+      "582749d46b3f90d170284372206ed33b4638df82160aed338d5552b126d9c14f"
+    ],
+    "lib/importlib_resources/_legacy.py": [
+      "__pip__",
+      "dynamic",
+      "4cc2e4c7a68433a53cc484443d7a8666b31b5214e23d4b8f97a1120fb45d623e"
+    ],
+    "lib/importlib_resources/abc.py": [
+      "__pip__",
+      "dynamic",
+      "32f4c92576a36e5ef8b37e86c9e7ac7fbe9e82d6c59e1f9332dcd0315845597a"
+    ],
+    "lib/importlib_resources/py.typed": [
+      "__pip__",
+      "dynamic",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "lib/importlib_resources/readers.py": [
+      "__pip__",
+      "dynamic",
+      "ffd40b190e40ceb103dcf63c4b665ff15eb22d1d3e9eaa98aad4268257832736"
+    ],
+    "lib/importlib_resources/simple.py": [
+      "__pip__",
+      "dynamic",
+      "c6dd2a8576f0b776d9f3acee69a29b4e213d0349836f0bb4b1a46352afe9718d"
+    ],
+    "lib/importlib_resources/tests/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "lib/importlib_resources/tests/_compat.py": [
+      "__pip__",
+      "dynamic",
+      "40623fe29d035f26f2a6862fc3492bde37d0aaf96cde9f2ee30cb85af7f467fa"
+    ],
+    "lib/importlib_resources/tests/data01/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "lib/importlib_resources/tests/data01/binary.file": [
+      "__pip__",
+      "dynamic",
+      "054edec1d0211f624fed0cbca9d4f9400b0e491c43742af2c5b0abebf0c990d8"
+    ],
+    "lib/importlib_resources/tests/data01/subdirectory/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "lib/importlib_resources/tests/data01/subdirectory/binary.file": [
+      "__pip__",
+      "dynamic",
+      "054edec1d0211f624fed0cbca9d4f9400b0e491c43742af2c5b0abebf0c990d8"
+    ],
+    "lib/importlib_resources/tests/data01/utf-16.file": [
+      "__pip__",
+      "dynamic",
+      "b79abdaa1c57d2b62a22d04e33c0f7ca5c06f911eb9ce62d7932ed42beac17b8"
+    ],
+    "lib/importlib_resources/tests/data01/utf-8.file": [
+      "__pip__",
+      "dynamic",
+      "9305a0606e3243e645d97fd603ae848d83e6c49467fb0f1a48e892f5ef2d2986"
+    ],
+    "lib/importlib_resources/tests/data02/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "lib/importlib_resources/tests/data02/one/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "lib/importlib_resources/tests/data02/one/resource1.txt": [
+      "__pip__",
+      "dynamic",
+      "d747e529a73b73e5d7173277b7e001e4c263941cbffdd499bcf13f74e9b6aba5"
+    ],
+    "lib/importlib_resources/tests/data02/two/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "lib/importlib_resources/tests/data02/two/resource2.txt": [
+      "__pip__",
+      "dynamic",
+      "96dda36cddd3327f5088528cf37d97dfd6d4ffad94a6d0dd524a18ce4bc46e5d"
+    ],
+    "lib/importlib_resources/tests/namespacedata01/binary.file": [
+      "__pip__",
+      "dynamic",
+      "054edec1d0211f624fed0cbca9d4f9400b0e491c43742af2c5b0abebf0c990d8"
+    ],
+    "lib/importlib_resources/tests/namespacedata01/utf-16.file": [
+      "__pip__",
+      "dynamic",
+      "b79abdaa1c57d2b62a22d04e33c0f7ca5c06f911eb9ce62d7932ed42beac17b8"
+    ],
+    "lib/importlib_resources/tests/namespacedata01/utf-8.file": [
+      "__pip__",
+      "dynamic",
+      "9305a0606e3243e645d97fd603ae848d83e6c49467fb0f1a48e892f5ef2d2986"
+    ],
+    "lib/importlib_resources/tests/test_compatibilty_files.py": [
+      "__pip__",
+      "dynamic",
+      "35691b22cca523c5b3dc3c2cc68d6ab93e1923a4e85c50369a88c21ba0f3bb1c"
+    ],
+    "lib/importlib_resources/tests/test_contents.py": [
+      "__pip__",
+      "dynamic",
+      "5755df93796a4c376f52c66e575f0a9dd7f4093fed90cda8108c24f55bf4ae18"
+    ],
+    "lib/importlib_resources/tests/test_files.py": [
+      "__pip__",
+      "dynamic",
+      "d4daafe9533f3237f0ae6b5760bd5ad42313d10842c62de134cab05e57cc4138"
+    ],
+    "lib/importlib_resources/tests/test_open.py": [
+      "__pip__",
+      "dynamic",
+      "a6612076b48574cf372fa171b51f14fd14fd05f237259e2c9c698cfd96487a06"
+    ],
+    "lib/importlib_resources/tests/test_path.py": [
+      "__pip__",
+      "dynamic",
+      "c6f3ed78d03e50a6af0e12a02e0ad0b974b1296607ed0e2748d0d57c15fde46b"
+    ],
+    "lib/importlib_resources/tests/test_read.py": [
+      "__pip__",
+      "dynamic",
+      "13262fa4727fec5e0bb97d8453f73911eac80507d184e16688847b2ce7396391"
+    ],
+    "lib/importlib_resources/tests/test_reader.py": [
+      "__pip__",
+      "dynamic",
+      "8605c7aaea801278a87a6bf6d1965c0e555a88eadc64a0033b7eff164890d346"
+    ],
+    "lib/importlib_resources/tests/test_resource.py": [
+      "__pip__",
+      "dynamic",
+      "0ea7cb35cf6468de686eac54f249f4b1151631ff4cca06a0ae97cc579f907d68"
+    ],
+    "lib/importlib_resources/tests/update-zips.py": [
+      "__pip__",
+      "dynamic",
+      "c7788956a5a730ce6aa783a86f63e5de8e988b4dec52312fff959ff940a0de9b"
+    ],
+    "lib/importlib_resources/tests/util.py": [
+      "__pip__",
+      "dynamic",
+      "5f58fed02f7aa6edffb66b49b8b8737c17dc7cc7a73a98432e4c6d0ade63eede"
+    ],
+    "lib/importlib_resources/tests/zipdata01/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "lib/importlib_resources/tests/zipdata01/ziptestdata.zip": [
+      "__pip__",
+      "dynamic",
+      "cf939fe1db2fdd3d2dfb8e81d0cb15871961b0f18ccf6f1a5212435a98f7fe86"
+    ],
+    "lib/importlib_resources/tests/zipdata02/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "lib/importlib_resources/tests/zipdata02/ziptestdata.zip": [
+      "__pip__",
+      "dynamic",
+      "c9d23efe3fb1810eed0f1a81a7d7233aa5c11b1529e9905bc1526ee978fe9eb6"
+    ],
+    "lib/jinja2/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "5772639d357e9f220737aaf08f4dcdd4cd757de8231afbfec1e887310c07d699"
+    ],
+    "lib/jinja2/_identifier.py": [
+      "__pip__",
+      "dynamic",
+      "11d80624a8bb3b5cafaf8c8596fa8f344a95e8cd6a1f242bf06b7c1a65532953"
+    ],
+    "lib/jinja2/async_utils.py": [
+      "__pip__",
+      "dynamic",
+      "8c17094a62e841ad8f8c974d70ea70694981c45344f6b64dc0c17b39bddd3fd2"
+    ],
+    "lib/jinja2/bccache.py": [
+      "__pip__",
+      "dynamic",
+      "bf9aca02563122f7c911ad2e1b3002eb2098492dcab974f912a8be9fdaaf362f"
+    ],
+    "lib/jinja2/compiler.py": [
+      "__pip__",
+      "dynamic",
+      "bfbccacfe9a04985e67d70fd9919a2d8153407a67ed5119998e5c2aec3cacdcd"
+    ],
+    "lib/jinja2/constants.py": [
+      "__pip__",
+      "dynamic",
+      "18ca05c9d045fe476969128fa0ce5c97932f8aab9544b57266d7e9e7ed7a8e0d"
+    ],
+    "lib/jinja2/debug.py": [
+      "__pip__",
+      "dynamic",
+      "af424bd2f7ceec73e5c8a64476be9e56583b1e8220d8e406989ed279413201e2"
+    ],
+    "lib/jinja2/defaults.py": [
+      "__pip__",
+      "dynamic",
+      "6e805c4b0efc87e969db461b697489b2a900236b8dfe60ff4ed0b27697aae705"
+    ],
+    "lib/jinja2/environment.py": [
+      "__pip__",
+      "dynamic",
+      "573db49e9057e7e4941ff7a0b90bb1ad240312c2c58e1a34a9c1cb74c858de10"
+    ],
+    "lib/jinja2/exceptions.py": [
+      "__pip__",
+      "dynamic",
+      "8a81de1eb5b009635a5d7d629c798755b96f73885a3bb017b230a9dc67d6bf1d"
+    ],
+    "lib/jinja2/ext.py": [
+      "__pip__",
+      "dynamic",
+      "e384a30e3798924c504e9982d817ad393c4414c810e36a7675f4b05e63c5712a"
+    ],
+    "lib/jinja2/filters.py": [
+      "__pip__",
+      "dynamic",
+      "8eeb0a4d96ddd1d75931a89b664c4c51528db0eb1a62d3aafc897c226b71e011"
+    ],
+    "lib/jinja2/idtracking.py": [
+      "__pip__",
+      "dynamic",
+      "59e91ec4caa5deee67def0f116c43f8bc1d6d23db802d8d64e3acf04b5ab1f0c"
+    ],
+    "lib/jinja2/lexer.py": [
+      "__pip__",
+      "dynamic",
+      "a8d110a83430ff33b911a1faac542c111ed0c27d9dbb4a36da9ac1f93475d471"
+    ],
+    "lib/jinja2/loaders.py": [
+      "__pip__",
+      "dynamic",
+      "d4c8d724e53aa78572c05aada43661b6fb53fef2259879d928c2871f0e126730"
+    ],
+    "lib/jinja2/meta.py": [
+      "__pip__",
+      "dynamic",
+      "18d3c4be27e649a53708cc656e17813998de676efb1d384e3d44dfd51929a4a4"
+    ],
+    "lib/jinja2/nativetypes.py": [
+      "__pip__",
+      "dynamic",
+      "282265ef532882b0e287f04706eeb1579a7b0abfe3820020bbeb2129383a2f6f"
+    ],
+    "lib/jinja2/nodes.py": [
+      "__pip__",
+      "dynamic",
+      "8b7e063d10197b15cc4fa6f0b9fe52132bdd992f9b442cbd28c8f03793baa639"
+    ],
+    "lib/jinja2/optimizer.py": [
+      "__pip__",
+      "dynamic",
+      "b4790cc17c5f6646df0352a62dcaa604c49acfb44b22fbc8b6b25c3e85d3c83f"
+    ],
+    "lib/jinja2/parser.py": [
+      "__pip__",
+      "dynamic",
+      "9079d4f2ff761b031891faf43156a45aff149527ff9093f1f0b52c8103287fbd"
+    ],
+    "lib/jinja2/py.typed": [
+      "__pip__",
+      "dynamic",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "lib/jinja2/runtime.py": [
+      "__pip__",
+      "dynamic",
+      "c1546590498080d53aec02100ea2ef23a52434b9330eaa4b03ecf8322def9778"
+    ],
+    "lib/jinja2/sandbox.py": [
+      "__pip__",
+      "dynamic",
+      "fbccf147a4cef6452472201516c20abbc3aaf82ecf4de604759e53b40e79fa0c"
+    ],
+    "lib/jinja2/tests.py": [
+      "__pip__",
+      "dynamic",
+      "026e59e8b99faf65da1ff9e921f249f0c757b56b1b2e33142d926e953023df41"
+    ],
+    "lib/jinja2/utils.py": [
+      "__pip__",
+      "dynamic",
+      "b9d43158829aab8403099897377d6780a39a18675a300e5f97424c68cf85e9f8"
+    ],
+    "lib/jinja2/visitor.py": [
+      "__pip__",
+      "dynamic",
+      "66678bb938faea2737e7eb851fed66d042978b0e0e6c30dbfd6b84ea1e6f3c58"
+    ],
+    "lib/markupsafe/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "f537b3e1422523b27afec41c5052b574a9e24ff6fff1879fa46232609dd2af64"
+    ],
+    "lib/markupsafe/_native.py": [
+      "__pip__",
+      "dynamic",
+      "19328457e6d6819b928e496130739844753d9340cc7b04dfe6654465f91bba7b"
+    ],
+    "lib/markupsafe/_speedups.c": [
+      "__pip__",
+      "dynamic",
+      "0830edc1a576d43da762dca99cc433c6fbe9669713bc8b3c399e8a0dad60e2dd"
+    ],
+    "lib/markupsafe/_speedups.cpython-36m-x86_64-linux-gnu.so": [
+      "__pip__",
+      "dynamic",
+      "4b1cf6d9cae2f4a4e180e45cc0f2c869676ec44f53b9898a280441cdd79d3ddf"
+    ],
+    "lib/markupsafe/_speedups.pyi": [
+      "__pip__",
+      "dynamic",
+      "bdf302b0e81b01744d2d45e4caeca89c6f2e1162985383c3a8db8c68310b018c"
+    ],
+    "lib/markupsafe/py.typed": [
+      "__pip__",
+      "dynamic",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "lib/netaddr/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "75ef3a3a19684ee97c049a64930875ca7e222beb445514469bf91721f357704f"
+    ],
+    "lib/netaddr/cli.py": [
+      "__pip__",
+      "dynamic",
+      "febe543c6476840661c83e1dfca6e61d00c1cff791a16165a85277c6d70bc407"
+    ],
+    "lib/netaddr/compat.py": [
+      "__pip__",
+      "dynamic",
+      "a3817d44e33fa00cf8b488fca9e181eaf89605a5d5c72384b533f2e89e2cbc0d"
+    ],
+    "lib/netaddr/contrib/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "b470c058ae53d25dc8c4c8e59e55d16660551167bf26762ee8699d49e3fcb254"
+    ],
+    "lib/netaddr/contrib/subnet_splitter.py": [
+      "__pip__",
+      "dynamic",
+      "165a00c73bdc30c5d71da7ac1898b2256ba0d51f16af187ed340afbfa51f0c06"
+    ],
+    "lib/netaddr/core.py": [
+      "__pip__",
+      "dynamic",
+      "021421c2eb6a975d7049458de7f8a9e9c33d8078cfff3af773b237048ac2c08c"
+    ],
+    "lib/netaddr/eui/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "b444f69babe1b7ec7c5944adaafef039f5443ed3df60f641a697009bcfb99e9f"
+    ],
+    "lib/netaddr/eui/iab.idx": [
+      "__pip__",
+      "dynamic",
+      "b10f9f0598de08655b613e236303cccccb24b49ef46fc910261af9f0d5692b58"
+    ],
+    "lib/netaddr/eui/iab.txt": [
+      "__pip__",
+      "dynamic",
+      "8175fde9ccfccf1942bd677b48dc118b099fe8e2ec6e7bce55c0e834635430b4"
+    ],
+    "lib/netaddr/eui/ieee.py": [
+      "__pip__",
+      "dynamic",
+      "7f44b12f7b3a8f15f2b28be80b0f78f2f1735bfa8363c43c33ba74bf515767a5"
+    ],
+    "lib/netaddr/eui/oui.idx": [
+      "__pip__",
+      "dynamic",
+      "844d1d670b7e1bbd962b9ebd9fb029853a70c94365b0f76c449f74afc4943cd2"
+    ],
+    "lib/netaddr/eui/oui.txt": [
+      "__pip__",
+      "dynamic",
+      "c3aa87b9f252527d59404c764dca96d7580fdfd31c2b973a353ba68852182b41"
+    ],
+    "lib/netaddr/fbsocket.py": [
+      "__pip__",
+      "dynamic",
+      "2f6c99b4954184047e1f17f1e6944e7c9884d95f579232ed61fe8e3449542671"
+    ],
+    "lib/netaddr/ip/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "af348d870e07fc4950483f3e1a69b76ea6ccab1181e0d755d968a3aa4b04b356"
+    ],
+    "lib/netaddr/ip/glob.py": [
+      "__pip__",
+      "dynamic",
+      "b65c5e3f2a8003f26b3468f603cffdbd18336cc23125749cb3b0344b1d713612"
+    ],
+    "lib/netaddr/ip/iana.py": [
+      "__pip__",
+      "dynamic",
+      "09dce8e17b8aaba70a241e89c6b33d49ebcacfd69f307acb3ac78491d150821c"
+    ],
+    "lib/netaddr/ip/ipv4-address-space.xml": [
+      "__pip__",
+      "dynamic",
+      "4243ae4b54f9fd4633cc27a157e73bd79ba46648a9c527abb052670195f07741"
+    ],
+    "lib/netaddr/ip/ipv6-address-space.xml": [
+      "__pip__",
+      "dynamic",
+      "535e1ba719027c47392423a881bc37dee2c255bcd9778f569a05f10fcf40b719"
+    ],
+    "lib/netaddr/ip/ipv6-unicast-address-assignments.xml": [
+      "__pip__",
+      "dynamic",
+      "35373d7745c3752231ce67a8077ee67cd638eabd8c8a0e9a382261d24f18762c"
+    ],
+    "lib/netaddr/ip/multicast-addresses.xml": [
+      "__pip__",
+      "dynamic",
+      "b95d89f3d5d3dab7ef6fd5a8a4d524113639325b01e5af02b7d99938a098d6a2"
+    ],
+    "lib/netaddr/ip/nmap.py": [
+      "__pip__",
+      "dynamic",
+      "e8e1324d2af151436f1197615f4236edcf5a57b18f29fd6824c4f9d2da12feba"
+    ],
+    "lib/netaddr/ip/rfc1924.py": [
+      "__pip__",
+      "dynamic",
+      "1822d92a0e9552106ea9994de891cf3fe33455a684572b28ca1c7801e6533543"
+    ],
+    "lib/netaddr/ip/sets.py": [
+      "__pip__",
+      "dynamic",
+      "486fda3bd289d774dddd83eab05be59910dc78cc1b94359c493111ff0972e784"
+    ],
+    "lib/netaddr/strategy/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "408faf2412b8c02246a7e73a8904a46d10c4e30ab2d585b8e22a056b6a422775"
+    ],
+    "lib/netaddr/strategy/eui48.py": [
+      "__pip__",
+      "dynamic",
+      "c3e0a5506f227b7e06b157cd63cbc7557893594df4deffd13e33fbeacfc7ca71"
+    ],
+    "lib/netaddr/strategy/eui64.py": [
+      "__pip__",
+      "dynamic",
+      "9e2a5c62a3795d85aeecbf201246de55d7ea054e42279f76bb3df21522250ff9"
+    ],
+    "lib/netaddr/strategy/ipv4.py": [
+      "__pip__",
+      "dynamic",
+      "4fe74ad3ddbabe1f855aca3633b18b353962292b5e2f36d97c41f7eed8eea477"
+    ],
+    "lib/netaddr/strategy/ipv6.py": [
+      "__pip__",
+      "dynamic",
+      "3aec217176ed45eb88e8a62d3ba36c73d91d1234e156a998e179af9d3281ba75"
+    ],
+    "lib/pbr/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "lib/pbr/build.py": [
+      "__pip__",
+      "dynamic",
+      "d9f51caba5719574a378ceb54b14433fa98775c00e5613643d4b925361281eef"
+    ],
+    "lib/pbr/builddoc.py": [
+      "__pip__",
+      "dynamic",
+      "49e9d99ea66e016db885ff0058d6f5ecf6d8f3f8f7853ea0681e6fa9ba55f27d"
+    ],
+    "lib/pbr/cmd/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "lib/pbr/cmd/main.py": [
+      "__pip__",
+      "dynamic",
+      "515c894a7a0c895a172d0cee190e9ef02e1f1099e8bb5823c24c8a8be652b03b"
+    ],
+    "lib/pbr/core.py": [
+      "__pip__",
+      "dynamic",
+      "fcb631175d24740119191a3c41961ba7091f676bce2d3ee7e6a53a70c099ddfe"
+    ],
+    "lib/pbr/extra_files.py": [
+      "__pip__",
+      "dynamic",
+      "eeb695f5ba2677f67469d28551afea04df9931bb679436f1a1cf5ed201626fbb"
+    ],
+    "lib/pbr/find_package.py": [
+      "__pip__",
+      "dynamic",
+      "bbc5e6f19f424182c104158dac78bb614192d6f85eb70d4275836ebf6469bc92"
+    ],
+    "lib/pbr/git.py": [
+      "__pip__",
+      "dynamic",
+      "6b386a60fd446a595eada8808f12bd113912790c09b54e9e69a39038d0b67b25"
+    ],
+    "lib/pbr/hooks/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "bfac6da2c631709b09a84dec560d4814d51af85217a49b2e4f4cdabe0c5d6d43"
+    ],
+    "lib/pbr/hooks/backwards.py": [
+      "__pip__",
+      "dynamic",
+      "bb3d687e78ac8305ee133d90283011927c3f1a479ac9639b2831e2dfa7a44b60"
+    ],
+    "lib/pbr/hooks/base.py": [
+      "__pip__",
+      "dynamic",
+      "0502dc05f15df9fd79d5a48e38e637e7daca60d6f62ca39a7ad8f8845db95d8e"
+    ],
+    "lib/pbr/hooks/commands.py": [
+      "__pip__",
+      "dynamic",
+      "89312bae2a14f1abc8b7257ebf6ca8cd57b61906bf4653ca694219ad7366484c"
+    ],
+    "lib/pbr/hooks/files.py": [
+      "__pip__",
+      "dynamic",
+      "5ef293505e77dec7d57fc92b67706a8ea1bd0d5302eb95d7d676eb364d0b643c"
+    ],
+    "lib/pbr/hooks/metadata.py": [
+      "__pip__",
+      "dynamic",
+      "7f781c2d7d53358245d8e99a7b1c807bda21d9a5cbb1dc69f3828bdf40cff084"
+    ],
+    "lib/pbr/options.py": [
+      "__pip__",
+      "dynamic",
+      "a69a5521e94c4e91caa54029f264cfc4b210b7081d1308f7305a23137d98c23a"
+    ],
+    "lib/pbr/packaging.py": [
+      "__pip__",
+      "dynamic",
+      "923c188c5398454fef1029fa685cd47f54af6fea3a514fc3bb864baab667241d"
+    ],
+    "lib/pbr/pbr_json.py": [
+      "__pip__",
+      "dynamic",
+      "b44341a3ea177a3106e2c5014b841e47c6a7c060a83ddbbb408785990818ecd0"
+    ],
+    "lib/pbr/sphinxext.py": [
+      "__pip__",
+      "dynamic",
+      "bbc2ec1f013d765e702e597da3909ca5ec9b551cfe15a32c0cf937139e31ebc7"
+    ],
+    "lib/pbr/testr_command.py": [
+      "__pip__",
+      "dynamic",
+      "093d0470335442eb89e9652488933bdd0fcce56e60c3c7c75768f1adc404174e"
+    ],
+    "lib/pbr/tests/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "5d7f7ba4a799799d97da79d119394221b9c1c5a55df5605d05908a8b95447928"
+    ],
+    "lib/pbr/tests/base.py": [
+      "__pip__",
+      "dynamic",
+      "d6dc56ef5c31e9f71844f5762715ac200f81794aa612f2989f50f5c242331045"
+    ],
+    "lib/pbr/tests/test_commands.py": [
+      "__pip__",
+      "dynamic",
+      "1e968032d2c2879658981f2fbcb2a54ca2f7bfd5d47032ff894474d2ba509459"
+    ],
+    "lib/pbr/tests/test_core.py": [
+      "__pip__",
+      "dynamic",
+      "772d7c538651de36ca4c0508ebffd1f87617f76eb8f709f84bd5071e15ba1ac2"
+    ],
+    "lib/pbr/tests/test_files.py": [
+      "__pip__",
+      "dynamic",
+      "74a41056265dc5dcd9eeb72f55c3c4a29ca23de55429292e58836dca2ce39d64"
+    ],
+    "lib/pbr/tests/test_hooks.py": [
+      "__pip__",
+      "dynamic",
+      "5e33dbf01e2cfeebebdb2b07d300e919a5345a753ccfa4feda9cd17970f2139e"
+    ],
+    "lib/pbr/tests/test_integration.py": [
+      "__pip__",
+      "dynamic",
+      "809fdc4005ebc9d02298af51a317a5df5aa3600e8bc3cee3db3fc53b047ce528"
+    ],
+    "lib/pbr/tests/test_packaging.py": [
+      "__pip__",
+      "dynamic",
+      "1c5dca5c4f8db0b5f21fc7b487871afaa4bbba58007fc2cb0f5e5c21e6a679c2"
+    ],
+    "lib/pbr/tests/test_pbr_json.py": [
+      "__pip__",
+      "dynamic",
+      "a3fa59fd42732468fe62c99099250a21423448b37cb04d2cdfc39f51d3693fc6"
+    ],
+    "lib/pbr/tests/test_setup.py": [
+      "__pip__",
+      "dynamic",
+      "887cba0176888df891a4115b0502ecc7fef93ebeb43bb2a7f142ad6fdda1f989"
+    ],
+    "lib/pbr/tests/test_util.py": [
+      "__pip__",
+      "dynamic",
+      "a4f4621807c5a82de951f3dbcc75f0b9ed12f095cda6bc87782befb5ca83d325"
+    ],
+    "lib/pbr/tests/test_version.py": [
+      "__pip__",
+      "dynamic",
+      "d5cfb9b3be65adf0000c4d41a7bc957818a470037f4c3b3bbdeb4b2ed6524525"
+    ],
+    "lib/pbr/tests/test_wsgi.py": [
+      "__pip__",
+      "dynamic",
+      "91b9087713d2f1ece71fd65eb155a526e30746d95f15621f6d78925f38a6ce6d"
+    ],
+    "lib/pbr/tests/testpackage/CHANGES.txt": [
+      "__pip__",
+      "dynamic",
+      "37abf10c0608e8cc78d86ee952408d9adac1420062a05484897d101a139c009a"
+    ],
+    "lib/pbr/tests/testpackage/LICENSE.txt": [
+      "__pip__",
+      "dynamic",
+      "eb4a8c8791f6caab1cf36df26db2b6f4e2ddda52657b060ff7f02abc63910aef"
+    ],
+    "lib/pbr/tests/testpackage/MANIFEST.in": [
+      "__pip__",
+      "dynamic",
+      "a5d3c31f25631ec6aabfe399e7eb9834f3541f6e4f94f6ed1bb5924bdc8425df"
+    ],
+    "lib/pbr/tests/testpackage/README.txt": [
+      "__pip__",
+      "dynamic",
+      "8b670d4406bd50274faa295a65712358c40a2229005f219d67de81433fe007bd"
+    ],
+    "lib/pbr/tests/testpackage/data_files/a.txt": [
+      "__pip__",
+      "dynamic",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "lib/pbr/tests/testpackage/data_files/b.txt": [
+      "__pip__",
+      "dynamic",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "lib/pbr/tests/testpackage/data_files/c.rst": [
+      "__pip__",
+      "dynamic",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "lib/pbr/tests/testpackage/doc/source/conf.py": [
+      "__pip__",
+      "dynamic",
+      "0d40620beca0fe7990a337731327623e759abaf369efa9f4317f32d1d4eaef6b"
+    ],
+    "lib/pbr/tests/testpackage/doc/source/index.rst": [
+      "__pip__",
+      "dynamic",
+      "e2abedb564d093df94bb3c92eace448d2ba1aa5731ca17106a00622743e7daa3"
+    ],
+    "lib/pbr/tests/testpackage/doc/source/installation.rst": [
+      "__pip__",
+      "dynamic",
+      "24bfe6e49ec15fcf01abe8403f8c48f5aea4b76117c56efa9cadd8c6775b70f4"
+    ],
+    "lib/pbr/tests/testpackage/doc/source/usage.rst": [
+      "__pip__",
+      "dynamic",
+      "53966f9b3b92616124680dded5685f37cf85a58def16d79a91c475bdc97d209a"
+    ],
+    "lib/pbr/tests/testpackage/extra-file.txt": [
+      "__pip__",
+      "dynamic",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "lib/pbr/tests/testpackage/git-extra-file.txt": [
+      "__pip__",
+      "dynamic",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "lib/pbr/tests/testpackage/pbr_testpackage/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "2e53e7250a8060e9a04d8ad9a8967d853d2110105e562a8518c8a38d1017045f"
+    ],
+    "lib/pbr/tests/testpackage/pbr_testpackage/_setup_hooks.py": [
+      "__pip__",
+      "dynamic",
+      "de0ec27dffd54623358a9000e1580e0a952834c62bc697d5bcefc5ec722ef896"
+    ],
+    "lib/pbr/tests/testpackage/pbr_testpackage/cmd.py": [
+      "__pip__",
+      "dynamic",
+      "4f4798b4e8d8fa3be0db53527d58d30d02e43b2aaba77ab735c164840e0ba221"
+    ],
+    "lib/pbr/tests/testpackage/pbr_testpackage/extra.py": [
+      "__pip__",
+      "dynamic",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "lib/pbr/tests/testpackage/pbr_testpackage/package_data/1.txt": [
+      "__pip__",
+      "dynamic",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "lib/pbr/tests/testpackage/pbr_testpackage/package_data/2.txt": [
+      "__pip__",
+      "dynamic",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "lib/pbr/tests/testpackage/pbr_testpackage/wsgi.py": [
+      "__pip__",
+      "dynamic",
+      "7b77c795ea97fde0e48d921c80e910edf658a99c13cb03242c3dacd28b91d00f"
+    ],
+    "lib/pbr/tests/testpackage/setup.cfg": [
+      "__pip__",
+      "dynamic",
+      "d107de17c9916ceea2dfe09d41bec566b629085518f24f32c23d1e9647eb40a3"
+    ],
+    "lib/pbr/tests/testpackage/setup.py": [
+      "__pip__",
+      "dynamic",
+      "1afcdd7041602308123bcc24f0dce8254526a069efad845142bdca7fd99bb6ec"
+    ],
+    "lib/pbr/tests/testpackage/src/testext.c": [
+      "__pip__",
+      "dynamic",
+      "f9f7b306e8cbff96efa0a7ed0d04b2c4370d8657983d1e3d9e99e76e8cbe3fc5"
+    ],
+    "lib/pbr/tests/testpackage/test-requirements.txt": [
+      "__pip__",
+      "dynamic",
+      "845381ea4bde47dfe2848e40fbe050baa5357b86cfd5700ee8adacb30215cde5"
+    ],
+    "lib/pbr/tests/util.py": [
+      "__pip__",
+      "dynamic",
+      "a7d2c16c25e8be8711ac67eec9fcfcf3b176c33c9b088d55b41b38d3d37c5cb8"
+    ],
+    "lib/pbr/util.py": [
+      "__pip__",
+      "dynamic",
+      "0a249861377c8155c22931452489fcc9c538827faf27266063e12c0604cd0799"
+    ],
+    "lib/pbr/version.py": [
+      "__pip__",
+      "dynamic",
+      "851494f769bcb4d56a529b45f25a88e9e9e4eb6b970a2d15626e537a1beb44ab"
+    ],
+    "lib/pyaml/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "ee9ed719474d10e35f7a89527c6aac37419ca66a7bb68646763fbdb75959212f"
+    ],
+    "lib/pyaml/__main__.py": [
+      "__pip__",
+      "dynamic",
+      "881767b7beac847cdee7c11b8472fd2ed738e37d32acb15835a694f418d0e01e"
+    ],
+    "lib/pyaml/tests/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "lib/pyaml/tests/dump.py": [
+      "__pip__",
+      "dynamic",
+      "a508fe4b465a7a6c635a39dff3aecf43f6352717a9c629fd30e97716a42d8b64"
+    ],
+    "lib/pyaml/tests/test_dump.py": [
+      "__pip__",
+      "dynamic",
+      "8b05abf46838a58373a01116158dac9b1601f535e943d0fc597a2e5cda6c9e82"
+    ],
+    "lib/six.py": [
+      "__pip__",
+      "dynamic",
+      "4ce39f422ee71467ccac8bed76beb05f8c321c7f0ceda9279ae2dfa3670106b3"
+    ],
+    "lib/tempita/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "30ea6e75cb7a5d6c0429d16c4beb7e4010a4ae12736917fc51840ed97e7c1cbb"
+    ],
+    "lib/tempita/__main__.py": [
+      "__pip__",
+      "dynamic",
+      "a1d2d7db758f10dd6577e056b00507853fa7a47a5e7632fd77f0749628f23709"
+    ],
+    "lib/tempita/_looper.py": [
+      "__pip__",
+      "dynamic",
+      "f822e1eb8899e9cd5ccc7c5c86f89b4f23b2326eff992f35a2578ee8507070c8"
+    ],
+    "lib/tempita/compat3.py": [
+      "__pip__",
+      "dynamic",
+      "cb81cfac35589a28fce3f6c78b73e4d40d364afbd39a6f7c7a87695a0c731f6d"
+    ],
+    "lib/yaml/__init__.py": [
+      "__pip__",
+      "dynamic",
+      "3434bb4bc5e003bdbe858e8b4661b35164cfbf31b38d656b5a4f8e180fbbec00"
+    ],
+    "lib/yaml/_yaml.cpython-36m-x86_64-linux-gnu.so": [
+      "__pip__",
+      "dynamic",
+      "202208b592068b9e4a67d7dff7b6338dcd199f83ad7967b5aac478bdae1b1b77"
+    ],
+    "lib/yaml/composer.py": [
+      "__pip__",
+      "dynamic",
+      "fcaa37d16afa783594794a5ab94193dcb720f503c19ce3d59539c8311189f453"
+    ],
+    "lib/yaml/constructor.py": [
+      "__pip__",
+      "dynamic",
+      "90d8247da78b524c10618fd0e857f54f3d97570fe91b5c5513d024ef3faf88b0"
+    ],
+    "lib/yaml/cyaml.py": [
+      "__pip__",
+      "dynamic",
+      "e99ac01bd7c062f7557b614aff0d21997a06ed962ca185306a91bc0a20bbd87d"
+    ],
+    "lib/yaml/dumper.py": [
+      "__pip__",
+      "dynamic",
+      "3cb72d66563064ba7b5e679477046ebf89d8399d940670c8532f3e94a7cb17ea"
+    ],
+    "lib/yaml/emitter.py": [
+      "__pip__",
+      "dynamic",
+      "8e086d694ede170837d5b1b407b45979aff6f40762f422a65eafd08e04290a44"
+    ],
+    "lib/yaml/error.py": [
+      "__pip__",
+      "dynamic",
+      "021f73fada072546c4f63f8cf18a7181244ce4280b09cc15cc980b2d1176171a"
+    ],
+    "lib/yaml/events.py": [
+      "__pip__",
+      "dynamic",
+      "e74fd392c810884e2ea7e94aa3f57e9c1cbeb402319083d0c58e6a0e1282787c"
+    ],
+    "lib/yaml/loader.py": [
+      "__pip__",
+      "dynamic",
+      "5156becc8aa6905482218abf3e04869b835226db4763645fff3438fdbd5f1cdd"
+    ],
+    "lib/yaml/nodes.py": [
+      "__pip__",
+      "dynamic",
+      "80f28d8fca4a09d87677882bde021820d9cf39a3b11a12405226211919cf13ce"
+    ],
+    "lib/yaml/parser.py": [
+      "__pip__",
+      "dynamic",
+      "8a55a9e6fbe0a07146cef3990c8b45a068c3e83e369e1959ad9ca30306b4a09a"
+    ],
+    "lib/yaml/reader.py": [
+      "__pip__",
+      "dynamic",
+      "d1d9b38ab3a20c6e17a38d519ee412ecaf6b918df18c78956ac7c330d4ea08dc"
+    ],
+    "lib/yaml/representer.py": [
+      "__pip__",
+      "dynamic",
+      "22e58ff9c016f6c1ca1274b4802a926bcf78935060e1c813c5a0f021c6d143e6"
+    ],
+    "lib/yaml/resolver.py": [
+      "__pip__",
+      "dynamic",
+      "f4bf9561f9b89961f1503d558385fbae30d12bfed565de9bf76c33abb63620a6"
+    ],
+    "lib/yaml/scanner.py": [
+      "__pip__",
+      "dynamic",
+      "60433788b652690c17710460da5d91e0c753d3318fd85f5e1e42862a71f25906"
+    ],
+    "lib/yaml/serializer.py": [
+      "__pip__",
+      "dynamic",
+      "0a1b85826854d35863e31808f0668abfabdf33606e8f06bd8bb7761401e3edc0"
+    ],
+    "lib/yaml/tokens.py": [
+      "__pip__",
+      "dynamic",
+      "953408cd2570f0c83dc2fe39f7e4e388e41eeb05738aa69196a5f6ffcf6ba79e"
+    ],
+    "lib/zipp.py": [
+      "__pip__",
+      "dynamic",
+      "6a3ced387fbd23b280ff8c2a0d8ca0b476bac54055660169999f0513be071c72"
+    ],
+    "make_docs": [
+      "layer:status",
+      "static",
+      "c990f55c8e879793a62ed8464ee3d7e0d7d2225fdecaf17af24b0df0e2daa8c1"
+    ],
+    "metadata.yaml": [
+      "mongodb-k8s",
+      "dynamic",
+      "32e2d8f55452d784b2d3cd100ffa06f28ed846f66e7a2a383df463dc14b54403"
+    ],
+    "pydocmd.yml": [
+      "layer:status",
+      "static",
+      "11d9293901f32f75f4256ae4ac2073b92ce1d7ef7b6c892ba9fbb98690a0b330"
+    ],
+    "reactive/__init__.py": [
+      "layer:leadership",
+      "static",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "reactive/leadership.py": [
+      "layer:leadership",
+      "static",
+      "e2b233cf861adc3b2d9e9c062134ce2f104953f03283cdddd88f49efee652e8f"
+    ],
+    "reactive/mongo.py": [
+      "mongodb-k8s",
+      "static",
+      "d54b7bcc0678fff1c5f4867799eacaa957c62684bb7a22816551dde669512d86"
+    ],
+    "reactive/osm_common.py": [
+      "layer:osm-common",
+      "static",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "reactive/spec_template.yaml": [
+      "mongodb-k8s",
+      "static",
+      "58d9663a65f3f801ffacab88e49d3bb650727b2ad37e5bab1fb016b17162e8f8"
+    ],
+    "reactive/spec_template_ha.yaml": [
+      "mongodb-k8s",
+      "static",
+      "af2740daf08e9c0ee492af7e8daf9d1ff4660cc9b46940f16e280bd99a18144f"
+    ],
+    "reactive/status.py": [
+      "layer:status",
+      "static",
+      "30207fc206f24e91def5252f1c7f7c8e23c0aed0e93076babf5e03c05296d207"
+    ],
+    "tactics/__init__.py": [
+      "layer:caas-base",
+      "static",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "tactics/wheelhouse.py": [
+      "layer:caas-base",
+      "static",
+      "bdca2db8f14cf0e376d1475e5c1380c25fe13ba2f2c83ceef8c175c2d2c0f4b3"
+    ],
+    "test-requirements.txt": [
+      "mongodb-k8s",
+      "static",
+      "502607fe48ca967c85f5ecf4835b93debd20d3578f238e343ea91937f85c6dfd"
+    ],
+    "tests/basic_deployment.py": [
+      "mongodb-k8s",
+      "static",
+      "76187a574ddaba74c5ffa4b8ad439c0e34eece9227fcea5733d0144161a5bdb7"
+    ],
+    "tests/bundles/mongodb-ha.yaml": [
+      "mongodb-k8s",
+      "static",
+      "f225620ddde59a1b783f08acb28898a2d391d8bbdb45b6071280c699c1475393"
+    ],
+    "tests/bundles/mongodb.yaml": [
+      "mongodb-k8s",
+      "static",
+      "8979e743bed66e2a6fed4a640e2c20ccd645042200047730a7819526cf6814eb"
+    ],
+    "tests/tests.yaml": [
+      "mongodb-k8s",
+      "static",
+      "1137d61353e02ad73eb867b99f47be8f256923e5dc2d05e7e76bb94f30a83c55"
+    ],
+    "tox.ini": [
+      "mongodb-k8s",
+      "static",
+      "efb5ea318774a7987c43b409905a9c4906c9c989ff2fbe3f0722e8e5fe83488d"
+    ],
+    "version": [
+      "mongodb-k8s",
+      "dynamic",
+      "2d6f8b4774a71e957cebd684b05623aaa68e2857f6b69b201529f8cc8c80e31d"
+    ],
+    "wheelhouse.txt": [
+      "layer:caas-base",
+      "dynamic",
+      "a864aa4e4886808c0f625cfedb2d3905ad24bcc569035450e1be725caf790111"
+    ]
+  }
+}
